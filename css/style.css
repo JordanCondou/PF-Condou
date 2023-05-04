@@ -431,6 +431,9 @@ ol{
     column-gap: 20px;
     row-gap: 20;
 }
+/* fin grid + flexbox */
+
+/* diseño responsive mobile */
 
 @media (max-width: 576px) {
     header{
