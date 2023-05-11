@@ -3,39 +3,27 @@
     padding: 0;
     margin: 0;
 }
-/* estilos + flex del header y nav */
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+/* estilos header y nav */
+
 .header{
     border-bottom: inset 1px rgb(187, 183, 183);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
-nav ul li a, nav ul li{
+
+nav div ul li a, nav div ul li{
     color: black;
-}
-nav ul li a{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    }
-    nav ul{
-        display: flex;
-        flex-wrap: wrap;
+    list-style: none;
+    
+}
+nav div ul{
         gap: 60px;
-        margin-right: 20px;
+        margin-left: 350px;
     }
     
-    nav ul li{
-        list-style: none;
-    }
     /*fin estilos + flex del header y nav */
 
     /* estilos generales de las 5 paginas */
@@ -51,6 +39,7 @@ nav ul li a{
         color: black;
         padding: 130px;
         font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         
         }
     .letra__celeste{
@@ -58,6 +47,8 @@ nav ul li a{
         text-align: center;
         padding-top: 20px;
         font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
 
 
     }
@@ -66,12 +57,16 @@ nav ul li a{
         text-align: center;
         padding-top: 5px;
         font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
 
     }
     .letra__celeste3{
         color: rgb(0, 68, 255);
         padding-top: 20px;
         font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
         }
     
     .conoce{
@@ -94,7 +89,8 @@ h2{
     padding-bottom: 20px;
     padding-top: 10px;
     padding-left: 10px;
-    
+    color: black;
+    font-weight: bold;
 }
 section div i{
     color: rgb(0, 68, 255);
@@ -133,6 +129,7 @@ p{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 10px;
+    color: black;
 }
 
 section article h3{
@@ -146,11 +143,12 @@ main section h3{
     font-family: 'Times New Roman', Times, serif;
     color: black;
 }
-.sobremi{
+.sobre-mi{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 10px;
     list-style: none;
+    color: black;
 }
 section article h4{
     font-size: 24px;
@@ -159,6 +157,9 @@ section article h4{
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 5px;
+}
+section article ul{
+    padding-left: 0px;
 }
 
 
@@ -190,7 +191,9 @@ footer{
         margin-left: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
+
     }
+
 body{
     margin: 10px;
 }
@@ -212,6 +215,16 @@ article h3{
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+
+article h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+
 }
 ol{
     padding-left: 20px;
@@ -437,20 +450,21 @@ ol{
 
 @media (max-width: 576px) {
     header{
-        flex-direction: column;
-        margin-bottom: 10px;
+        
+        margin-bottom: 5px;
 
     }
     .header{
-        flex-direction: column;
-        margin-bottom: 10px;
+        
+        margin-bottom: 5px;
     }
-    nav ul{
-        flex-wrap: nowrap;
-        gap: 20px;
+    nav div ul{
+        gap: 10px;
         margin-right: 0px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 5px;
+        
 
     }
     .section_index{
