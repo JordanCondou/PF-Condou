@@ -1,0 +1,20 @@
+.header{
+    border-bottom: nth($borde, 1);
+}
+
+nav div ul li a, nav div ul li{
+    color: map-get($nav, color);
+    text-decoration: map-get($nav, t-d);
+    font-family: map-get($nav, font-f);
+    font-size: map-get($nav, font-sz);
+    list-style: map-get($nav, list-s);
+
+}
+nav div ul{
+    gap: map-get($nav-u, gap);
+    margin-left: map-get($nav-u, mar-l);
+}
+.nav-item:hover{
+    transform: map-get($hover, t1);
+    transition: map-get($hover, t2);
+}
