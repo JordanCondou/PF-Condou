@@ -90,10 +90,14 @@ ol{
     padding-left: nth($padd-l, 4);
 }
 
-.blog article{
+.blog{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    @media (max-width: 576px) {
+        overflow-x: hidden;
+        
+    }
 
 }
 

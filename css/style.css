@@ -224,7 +224,7 @@
 nav div ul li a, nav div ul li {
   color: black;
   text-decoration: none;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   font-size: 18px;
   list-style: none;
 }
@@ -290,7 +290,7 @@ h1 {
   color: black;
   padding: 130px;
   font-size: 50px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
 }
 
 .letra__celeste {
@@ -298,7 +298,7 @@ h1 {
   text-align: center;
   padding-top: 20px;
   font-size: 40px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   font-weight: bold;
 }
 
@@ -307,7 +307,7 @@ h1 {
   text-align: center;
   padding-top: 5px;
   font-size: 40px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   font-weight: bold;
 }
 
@@ -315,7 +315,7 @@ h1 {
   color: rgb(0, 68, 255);
   padding-top: 20px;
   font-size: 40px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   font-weight: bold;
 }
 
@@ -359,20 +359,20 @@ section div i {
 
 p {
   font-size: 22px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   padding-left: 10px;
   color: black;
 }
 
 section article h3, main section h3 {
   font-size: 25px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   color: black;
 }
 
 .sobre-mi {
   font-size: 20px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   padding-left: 10px;
   list-style: none;
   color: black;
@@ -380,7 +380,7 @@ section article h3, main section h3 {
 
 section article h4 {
   font-size: 24px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   color: black;
   padding-left: 10px;
   padding-top: 10px;
@@ -393,7 +393,7 @@ section article ul {
 
 .lista__ordenada {
   font-size: 20px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
 }
 
 .sobremi2 {
@@ -407,20 +407,20 @@ section article ul {
   padding-bottom: 10px;
   text-align: center;
   font-size: 22px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
 }
 
 article h3 {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   font-weight: bold;
   color: black;
 }
 
 article h4 {
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   font-weight: bold;
   color: black;
 }
@@ -429,25 +429,29 @@ ol {
   padding-left: 20px;
 }
 
-.blog article {
+.blog {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
+@media (max-width: 576px) {
+  .blog {
+    overflow-x: hidden;
+  }
+}
 
 /* fin estilos section */
 /*estilos footer */
 footer h3 {
   font-size: 50px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   color: rgb(247, 240, 240);
   padding: 10px 10px 10px 10px;
 }
 
 footer div i {
   font-size: 20px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman, Times, serif";
   padding: 10px 10px 10px 10px;
   color: rgb(247, 240, 240);
 }
