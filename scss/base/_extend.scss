@@ -1,0 +1,266 @@
+/* flexbox */
+%flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+%flex1{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+%flex2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+%flex3{
+    display: flex;
+    justify-content: center;
+}
+
+.pie1{
+    @extend %flex;
+    gap: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.blog{
+    @extend %flex2;
+    gap: 40px;
+}
+
+.flex1{
+    @extend %flex2;
+}
+
+.imagenes_blog{
+    @extend %flex3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.video1{
+    @extend %flex3;
+    margin-top: 20px;
+}
+
+.iconos_index{
+    @extend %flex1;
+}
+
+/* fin de flexbox */
+
+/* grid + flex footer y section */
+
+%flexcolumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div1{
+    @extend %flexcolumn;
+    grid-area: div1;
+}
+.div_tel{
+    @extend %flexcolumn;
+    grid-area: tel;
+    padding-top: 10px;
+}
+.div_email{
+    @extend %flexcolumn;
+    grid-area: email;
+}
+.mapa{
+    @extend %flex3;
+    grid-area: mapa;
+    padding-top: 30px;
+}
+.div_iconos{
+    grid-area: iconos;
+}
+
+%footerindex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "div1 none mapa"
+    "tel none mapa"
+    "email iconos mapa";
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.footer_index{
+    @extend %footerindex;
+}
+.sh2{
+    @extend %flexcolumn;
+    grid-area: sh2;
+    padding-top: 20px;
+}
+
+.s1{
+    @extend %flexcolumn;
+    grid-area: s1;
+    padding-top: 20px;
+}
+
+.s2{
+    @extend %flexcolumn;
+    grid-area: s2;
+    padding-top: 20px;
+}
+.s3{
+    @extend %flexcolumn;
+    grid-area: s3;
+    padding-top: 20px;
+}
+.s4{
+    @extend %flexcolumn;
+    grid-area: s4;
+    padding-top: 20px;
+}
+
+%sectionindex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 3.5fr;
+    grid-template-areas: 
+    "sh2 sh2 sh2 sh2"
+    "s1 s2 s3 s4";
+    column-gap: 15px;
+    margin-top: 20px;
+}
+
+.section_index{
+    @extend %sectionindex;
+}
+
+.serv1{
+    grid-area: serv1;
+}
+.serv2{
+    @extend %flexcolumn;
+    grid-area: serv2;
+}
+.serv3{
+    @extend %flexcolumn;
+    grid-area: serv3;
+}
+.serv4{
+    @extend %flexcolumn;
+    grid-area: serv4;
+}
+.serv5{
+    @extend %flexcolumn;
+    grid-area: serv5;
+}
+%sectionserv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    "serv1 serv1 serv1 serv1"
+    "serv2 serv3 serv4 serv5";
+    column-gap: 10px;
+    row-gap: 30px;
+}
+.section_servicios{
+    @extend %sectionserv;
+}
+
+%wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.m1{
+    @extend %wrap;
+    grid-area: m1;
+}
+.m2{
+    @extend %wrap;
+    grid-area: m2;
+}
+.m3{
+    @extend %wrap;
+    grid-area: m3;
+}
+
+%main1{
+    display: grid;
+    grid-template-columns: 3.5fr 1.5fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "m1 m3"
+    "m2 m3";
+    column-gap: 20px;
+    row-gap: 20;
+}
+.main1{
+    @extend %main1;
+}
+  /* fin grid + flexbox */
+
+  /*responsive mobile */
+
+  @media (max-width: 576px) {
+    
+    .section_index{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "sh2"
+        "s1"
+        "s2"
+        "s3"
+        "s4";
+    }
+    .main1{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas: 
+        "m1"
+        "m2"
+        "m3";
+    }
+    .footer_index{
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.5fr;
+        grid-template-areas: 
+        "div1"
+        "tel"
+        "email"
+        "mapa";
+     
+    }
+    .div_iconos{
+        display: none;
+    }
+  .section_servicios{
+    grid-template-columns: 100%;
+    grid-template-rows: 0.2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "serv1"
+    "serv2"
+    "serv3"
+    "serv4"
+    "serv5";
+    row-gap: 5px;
+  }
+  .serv4{
+    padding-left: 50px;
+  }
+  
+  }
+
+  /* fin responsive mobile */

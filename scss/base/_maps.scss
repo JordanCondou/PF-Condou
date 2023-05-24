@@ -1,17 +1,40 @@
-$nav:(
-    color: black,
+$header:(
+    b-b: inset 1px rgb(187, 183, 183),
+);
+
+$nav-estilos:(
+    col: black,
     t-d: none,
-    font-f: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,
-    font-sz: 18px,
-    list-s: none,
-
-
+    f-fa: 'Times New Roman',
+    f-sz: 18px,
+    l-st: none,
 );
-$nav-u:(
-    gap: 60px,
-    mar-l: 350px,
+
+$nav:(
+    ga: 60px,
+    marg-l: 350px,
 );
+
 $hover:(
-    t1: scale(1.3),
-    t2: all 1.3s,
+    transf: scale(1.3),
+    trans: all 1.3s,
+);
+
+$body-imagen:(
+    b-rad: 80%,
+    mar-l: 30px,
+    pad-top: 10px,
+    pad-bot: 10px,
+);
+
+$imagen-1:(
+    back-i: url(../img/imagen1.jpg),
+    back-re: no-repeat,
+    back-sz: cover,
+);
+
+$preg-fr:(
+    ba-i: url(../img/preguntasfrecuentes.jpeg),
+    ba-re: no-repeat,
+    ba-sz: cover,
 );

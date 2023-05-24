@@ -1,0 +1,30 @@
+/*estilos footer */
+
+footer h3{
+    font-size: nth($font-siz, 2);
+    font-family: nth($font-fa, 2);
+    color: nth($colores, 3);
+    padding: nth($padd, 4);
+}
+footer div i{
+    font-size: nth($font-siz, 6);
+    font-family: nth($font-fa, 2);
+    padding: nth($padd, 4);
+    color: nth($colores, 3);
+}
+
+footer ul li a i{
+    font-size: nth($font-siz, 3);
+    color: nth($colores, 3);
+}
+
+footer ul li{
+    list-style: nth($list-sty, 1);
+}
+
+footer{
+    margin-top: nth($marg-top, 1);
+    background-color: nth($color-fondo, 1);
+}
+
+/* fin estilos footer */

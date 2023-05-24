@@ -1,13 +1,75 @@
-$borde:
-inset;
-
 $colores:
 black,
-rgb(0,68,255);
+rgb(0, 68, 255),
+rgb(247, 240, 240);
+
+$color-fondo:
+rgba(0, 68, 255, 0.7);
 
 $font-fa:
-Arial, Helvetica, sans-serif,
-Georgia, 'Times New Roman', Times, serif,
-'Times New Roman', Times, serif;
+'Arial, Helvetica, sans-serif',
+'Times New Roman';
+
+
+$font-siz:
+40px,
+50px,
+32px,
+28px,
+38px,
+20px,
+22px,
+25px,
+24px;
+
+$font-w:
+bold;
+
+$text-a:
+center;
+
+$padd:
+10px,
+130px,
+5px 5px 5px 5px,
+10px 10px 10px 10px;
+
+$padd-top:
+20px,
+5px,
+15px,
+10px,
+50px;
+
+$padd-l: 
+10px,
+0px,
+30px,
+20px;
+
+$padd-bot: 
+20px,
+5px,
+10px;
+
+$padd-r: 
+30px;
+
+$marg-top: 
+20px;
+
+$margin:
+10px;
+
+
+$list-sty:
+none;
+
+
+
+
+
+
+
 
 

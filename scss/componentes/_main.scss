@@ -1,0 +1,71 @@
+/* estilos main */
+
+.imagen1{
+    background-image: map-get($imagen-1, back-i);
+    background-repeat: map-get($imagen-1, back-re);
+    background-size: map-get($imagen-1, back-sz);
+}
+
+.preguntasfrecuentes{
+    background-image: map-get($preg-fr, ba-i);
+    background-repeat: map-get($preg-fr, ba-re);
+    background-size: map-get($preg-fr, ba-sz);
+}
+
+h1{
+    font-family: nth($font-fa, 1);
+    font-size: nth($font-siz, 1);
+    text-align: nth($text-a, 1);
+    padding: nth($padd, 1);
+}
+
+.letra__negra{
+    color: nth($colores, 1);
+    padding: nth($padd, 2);
+    font-size: nth($font-siz, 2);
+    font-family: nth($font-fa, 2);
+}
+
+.letra__celeste{
+    color: nth($colores, 2);
+    text-align: nth($text-a, 1);
+    padding-top: nth($padd-top, 1);
+    font-size: nth($font-siz, 1);
+    font-family: nth($font-fa, 2);
+    font-weight: nth($font-w, 1);
+
+}
+
+.letra__celeste2{
+    color: nth($colores, 2);
+    text-align: nth($text-a, 1);
+    padding-top: nth($padd-top, 2);
+    font-size: nth($font-siz, 1);
+    font-family: nth($font-fa, 2);
+    font-weight: nth($font-w, 1);
+}
+
+.letra__celeste3{
+    color: nth($colores, 2);
+    padding-top: nth($padd-top, 1);
+    font-size: nth($font-siz, 1);
+    font-family: nth($font-fa, 2);
+    font-weight: nth($font-w, 1);
+}
+
+.conoce{
+    text-align: nth($text-a, 1);
+    padding-top: nth($padd-top, 3);
+}
+
+main ul li a i{
+    font-size: nth($font-siz, 3);
+    color: nth($colores, 1);
+}
+main ul li{
+    list-style: nth($list-sty, 1);
+}
+
+/* fin estilos main */
+
+

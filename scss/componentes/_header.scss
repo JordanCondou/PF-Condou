@@ -1,20 +1,56 @@
+/* estilos y responsive header */
 .header{
-    border-bottom: nth($borde, 1);
+    border-bottom: map-get($header, b-b);
+    @media (max-width: 576px) {
+        margin-bottom: 5px;
+        
+    }
+}
+header{
+    @media (max-width: 576px) {
+        margin-bottom: 5px;
+    }
 }
 
 nav div ul li a, nav div ul li{
-    color: map-get($nav, color);
-    text-decoration: map-get($nav, t-d);
-    font-family: map-get($nav, font-f);
-    font-size: map-get($nav, font-sz);
-    list-style: map-get($nav, list-s);
+    color: map-get($nav-estilos, col);
+    text-decoration: map-get($nav-estilos, t-d);
+    font-family: map-get($nav-estilos, f-fa);
+    font-size: map-get($nav-estilos, f-sz);
+    list-style: map-get($nav-estilos, l-st);
+}
 
-}
 nav div ul{
-    gap: map-get($nav-u, gap);
-    margin-left: map-get($nav-u, mar-l);
+    gap: map-get($nav, ga);
+    margin-left: map-get($nav, marg-l);
+    @media (max-width: 576px) {
+        margin-left: 5px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin-right: 0px;
+        gap: 10px;
+        
+    }
 }
+
 .nav-item:hover{
-    transform: map-get($hover, t1);
-    transition: map-get($hover, t2);
+    transform: map-get($hover, transf);
+    transition: map-get($hover, trans);
+    @media (max-width: 576px) {
+        transform: none;
+        transition: none;
+        
+    }
 }
+body{
+    margin: $body;
+}
+
+body header a img{
+    border-radius: map-get($body-imagen, b-rad);
+    margin-left: map-get($body-imagen, mar-l);
+    padding-top: map-get($body-imagen, pad-top);
+    padding-bottom: map-get($body-imagen, pad-bot);
+}
+
+/* fin estilos y responsive header */

@@ -1,0 +1,100 @@
+/*estilos section */
+
+h2{
+    font-size: nth($font-siz, 4);
+    font-family: nth($font-fa, 1);
+    padding-bottom: nth($padd-bot, 1);
+    padding-top: nth($padd-top, 4);
+    padding-left: nth($padd-l, 1);
+    color: nth($colores, 1);
+    font-weight: nth($font-w, 1);
+}
+
+section div i{
+    color: nth($colores, 2);
+    font-size: nth($font-siz, 5);
+    margin: nth($margin, 1);
+    padding: nth($padd, 3);
+}
+
+.parrafo__index{
+    font-family: nth($font-fa, 1);
+    font-size: nth($font-siz, 4);
+}
+
+p{
+    font-size: nth($font-siz, 7);
+    font-family: nth($font-fa, 2);
+    padding-left: nth($padd-l, 1);
+    color: nth($colores, 1);
+}
+
+section article h3, main section h3{
+    font-size: nth($font-siz, 8);
+    font-family: nth($font-fa, 2);
+    color: nth($colores, 1);
+}
+.sobre-mi{
+    font-size: nth($font-siz, 6);
+    font-family: nth($font-fa, 2);
+    padding-left: nth($padd-l, 1);
+    list-style: nth($list-sty, 1);
+    color: nth($colores, 1);
+}
+
+section article h4{
+    font-size: nth($font-siz, 9);
+    font-family: nth($font-fa, 2);
+    color: nth($colores, 1);
+    padding-left: nth($padd-l, 1);
+    padding-top: nth($padd-top, 4);
+    padding-bottom: nth($padd-bot, 2);
+}
+section article ul{
+    padding-left: nth($padd-l, 2);
+
+}
+.lista__ordenada{
+    font-size: nth($font-siz, 6);
+    font-family: nth($font-fa, 2);
+}
+
+.sobremi2{
+    padding-right: nth($padd-r, 1);
+    padding-left: nth($padd-l, 3);
+    padding-top: nth($padd-top, 5);
+}
+.gracias{
+    padding-top: nth($padd-top, 4);
+    padding-bottom: nth($padd-bot, 3);
+    text-align: nth($text-a, 1);
+    font-size: nth($font-siz, 7);
+    font-family: nth($font-fa, 2);
+}
+article h3{
+    padding-top: nth($padd-top, 4);
+    padding-left: nth($padd-l, 1);
+    padding-bottom: nth($padd-bot, 3);
+    font-family: nth($font-fa, 2);
+    font-weight: nth($font-w, 1);
+    color: nth($colores, 1);
+}
+
+article h4{
+    font-family: nth($font-fa, 2);
+    font-weight: nth($font-w, 1);
+    color: nth($colores, 1);
+}
+
+ol{
+    padding-left: nth($padd-l, 4);
+}
+
+.blog article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+/* fin estilos section */
